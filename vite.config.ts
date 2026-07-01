@@ -18,6 +18,9 @@ function figmaAssetResolver() {
 
 export default defineConfig({
   base: '/bazar_gh/',
+  build: {
+    outDir: 'dist',
+  },
   plugins: [
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
